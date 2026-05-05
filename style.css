@@ -1,0 +1,58 @@
+/* Configuración de la pantalla del celular */
+.contenedor-app {
+    background-color: #f0e008;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.mi-header {
+    background-color: #0000FF; /* Verde institucional */
+    color: rgba(255, 217, 0, 0.788);
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.contenido {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Sistema de rejilla para las tarjetas */
+.grid-servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Diseño de cada tarjeta individual */
+.card {
+    background: rgb(2, 47, 250);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+/* Efecto al tocar la tarjeta (para que se sienta real) */
+.card:active {
+    transform: scale(0.8);
+    background-color: #0000FF;
+    filter: brightness(0.8);
+}
+
+.icon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
