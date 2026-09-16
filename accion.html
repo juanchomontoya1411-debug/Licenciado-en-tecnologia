@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#00d9ff">
+
+    <title>MotorLab | Simulador 3D</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Three.js -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        <span>⚙</span>
+        MotorLab
+    </div>
+
+    <button id="menuBtn" class="menu-btn">
+        ☰
+    </button>
+
+    <nav id="menu">
+
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="accion.html">Simulador 3D</a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="hero">
+
+        <p class="etiqueta">
+            🚗 EXPERIENCIA INTERACTIVA
+        </p>
+
+        <h1>
+            Explora un motor <span>3D</span>
+        </h1>
+
+        <p>
+            Observa las principales partes de un automóvil,
+            gira el vehículo y descubre cómo funciona su motor.
+        </p>
+
+    </section>
+
+
+    <section class="simulador">
+
+        <div class="panel-superior">
+
+            <div>
+                <strong>MotorLab 3D</strong>
+                <small>Modelo interactivo</small>
+            </div>
+
+            <div class="estado">
+                <span></span>
+                MOTOR ACTIVO
+            </div>
+
+        </div>
+
+
+        <!-- ESCENA 3D -->
+
+        <div id="escena3d"></div>
+
+
+        <div class="controles">
+
+            <button id="btnIzquierda">
+                ⟲
+            </button>
+
+            <button id="btnMotor">
+                ⚙ Motor
+            </button>
+
+            <button id="btnCapo">
+                🚘 Capó
+            </button>
+
+            <button id="btnDerecha">
+                ⟳
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <section class="componentes">
+
+        <h2>
+            Componentes del motor
+        </h2>
+
+        <p class="descripcion">
+            Selecciona una pieza para conocer su función.
+        </p>
+
+
+        <div class="cards">
+
+            <button class="card" data-pieza="motor">
+
+                <span>⚙️</span>
+
+                <strong>
+                    Motor
+                </strong>
+
+                <small>
+                    Genera la energía que mueve el vehículo.
+                </small>
+
+            </button>
+
+
+            <button class="card" data-pieza="radiador">
+
+                <span>🌡️</span>
+
+                <strong>
+                    Radiador
+                </strong>
+
+                <small>
+                    Ayuda a controlar la temperatura.
+                </small>
+
+            </button>
+
+
+            <button class="card" data-pieza="bateria">
+
+                <span>🔋</span>
+
+                <strong>
+                    Batería
+                </strong>
+
+                <small>
+                    Proporciona energía eléctrica.
+                </small>
+
+            </button>
+
+
+            <button class="card" data-pieza="alternador">
+
+                <span>⚡</span>
+
+                <strong>
+                    Alternador
+                </strong>
+
+                <small>
+                    Produce electricidad mientras funciona el motor.
+                </small>
+
+            </button>
+
+
+            <button class="card" data-pieza="aceite">
+
+                <span>🛢️</span>
+
+                <strong>
+                    Aceite
+                </strong>
+
+                <small>
+                    Reduce la fricción de las piezas.
+                </small>
+
+            </button>
+
+
+            <button class="card" data-pieza="bujia">
+
+                <span>🔥</span>
+
+                <strong>
+                    Bujía
+                </strong>
+
+                <small>
+                    Produce la chispa de combustión.
+                </small>
+
+            </button>
+
+        </div>
+
+
+        <div id="resultado" class="resultado">
+
+            <strong>
+                Selecciona un componente
+            </strong>
+
+            <p>
+                Aquí aparecerá información sobre la pieza.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <strong>MotorLab</strong>
+
+    <p>
+        Proyecto PWA educativo · Exploración automotriz 3D
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+<img src="imagenes/9ede89fe-bb37-4fcb-8137-63da42bac27c.png" alt="Mi foto" width="310" height="270">
+
+</body>
+</html>

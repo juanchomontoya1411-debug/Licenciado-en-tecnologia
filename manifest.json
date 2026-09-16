@@ -1,8 +1,22 @@
 {
-  "name": "App de Soluciones Tecnologicas",
-  "short_name": "MiApp",
-  "start_url": "index.html",
-  "display": "standalone",
-  "background_color": "#f4f7f6",
-  "theme_color": "#0000FF"
+    "name": "MotorLab | Exploración Automotriz 3D",
+    "short_name": "MotorLab",
+    "description": "PWA educativa interactiva para explorar las partes y funcionamiento de un motor de automóvil.",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#05080b",
+    "theme_color": "#00d9ff",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "imagenes/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "imagenes/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
 }
