@@ -1,36 +1,277 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi App Tecnológica</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="manifest.json">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color"
+          content="#00d9ff">
+
+    <meta name="description"
+          content="MotorLab - Aprende cómo funciona el motor de un automóvil de forma interactiva.">
+
+    <link rel="manifest"
+          href="manifest.json">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <title>MotorLab | Aprende sobre motores</title>
 </head>
+
 <body>
 
-<div class="contenedor-app">
-    <header class="mi-header">
-        <h1>Panel de Control</h1>
-    </header>
-    
-    <main class="contenido">
-        <p>Selecciona una opción para continuar:</p>
-        
-        <div class="grid-servicios">
-            <div class="card" id="btn-reportar">
-                <span class="icon">💩</span>
-                <h3>Reportar Fallo</h3>
+<header class="header">
+
+    <a href="index.html"
+       class="logo">
+        ⚙️ MotorLab
+    </a>
+
+    <button class="menu-btn"
+            id="menuBtn"
+            aria-label="Abrir menú">
+        ☰
+    </button>
+
+    <nav class="nav"
+        id="nav">
+
+        <a href="index.html">
+            Inicio
+        </a>
+
+        <a href="nosotros.html">
+            Nosotros
+        </a>
+
+        <a href="accion.html">
+            Motor 3D
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="badge">
+                🚗 APRENDE • EXPLORA • DESCUBRE
+            </span>
+
+            <h1>
+                Descubre cómo funciona
+                <span>un motor</span>
+            </h1>
+
+            <p>
+                MotorLab es una experiencia interactiva
+                para conocer las principales partes de un
+                automóvil y entender cómo trabajan juntas.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="accion.html"
+                   class="btn btn-primary">
+                    Explorar motor 3D →
+                </a>
+
+                <a href="nosotros.html"
+                   class="btn btn-secondary">
+                    Conocer el proyecto
+                </a>
+
             </div>
-            
-            <div class="card" id="btn-manual">
-                <span class="icon">🐝</span>
-                <h3>Ver Manual</h3>
-            </div>
+
         </div>
-    </main>
-</div>
+
+
+        <!-- REPRESENTACIÓN VISUAL -->
+
+        <div class="hero-car">
+
+            <div class="car-shadow"></div>
+
+            <div class="car-body">
+
+                <div class="car-roof"></div>
+
+                <div class="car-window window-left"></div>
+
+                <div class="car-window window-right"></div>
+
+                <div class="car-wheel wheel-left"></div>
+
+                <div class="car-wheel wheel-right"></div>
+
+                <div class="car-light light-left"></div>
+
+                <div class="car-light light-right"></div>
+
+                <div class="car-grille"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CARDS -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <span>
+                MOTORLAB
+            </span>
+
+            <h2>
+                Aprende de forma diferente
+            </h2>
+
+            <p>
+                Explora, observa y comprende las partes
+                fundamentales de un automóvil.
+            </p>
+
+        </div>
+
+
+        <div class="cards">
+
+            <article class="card">
+
+                <div class="card-icon">
+                    🔧
+                </div>
+
+                <h3>
+                    Partes del motor
+                </h3>
+
+                <p>
+                    Identifica componentes como el radiador,
+                    batería, alternador, bujías y más.
+                </p>
+
+                <a href="accion.html">
+                    Explorar →
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="card-icon">
+                    🧠
+                </div>
+
+                <h3>
+                    Aprende
+                </h3>
+
+                <p>
+                    Comprende de manera sencilla qué hace
+                    cada componente del automóvil.
+                </p>
+
+                <a href="accion.html">
+                    Aprender →
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="card-icon">
+                    🕹️
+                </div>
+
+                <h3>
+                    Interactúa
+                </h3>
+
+                <p>
+                    Haz clic sobre las piezas del motor para
+                    descubrir información.
+                </p>
+
+                <a href="accion.html">
+                    Probar →
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="cta">
+
+        <div>
+
+            <span>
+                EXPERIENCIA INTERACTIVA
+            </span>
+
+            <h2>
+                ¿Listo para explorar el motor?
+            </h2>
+
+            <p>
+                Entra al simulador y comienza a descubrir
+                cómo funciona un automóvil.
+            </p>
+
+        </div>
+
+        <a href="accion.html"
+           class="btn btn-primary">
+            Abrir Motor 3D
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <strong>
+        ⚙️ MotorLab
+    </strong>
+
+    <p>
+        Proyecto educativo PWA
+    </p>
+
+    <p>
+        © 2026 MotorLab
+    </p>
+
+</footer>
+
 
 <script src="script.js"></script>
+
 </body>
+
 </html>
